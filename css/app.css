@@ -7,3 +7,27 @@ body {
 	color: white;
 }
 
+#header-container .login {
+	color: white;
+}
+
+#menu-container {
+	background-color: #F7F7F9;
+}
+
+.btn.btn-platzi {
+	background-color: #99C84A;
+	color: white;
+}
+
+.btn.btn-platzi:hover {
+	background-color: #8AB542;
+}
+
+input.form-control:focus {
+	border-color: #99C84A;
+}
+
+#search-bar {
+	padding: 1em;
+}
