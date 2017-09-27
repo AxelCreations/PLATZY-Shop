@@ -22,15 +22,10 @@ $form.submit(function(ev){
 	$formGroup.append(el)
 })
 
-
-
-
-
 $('#btnMenuCollapse').click(function(ev){
   	$('#navBarMenu').toggleClass('collapse');
 });
 
-
 function mostrarModal(){
-	
+	$('#modalOferta').modal();
 }
