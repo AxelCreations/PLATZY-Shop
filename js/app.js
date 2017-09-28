@@ -29,3 +29,4 @@ $('#btnMenuCollapse').click(function(ev){
 function mostrarModal(){
 	$('#modalOferta').modal();
 }
+
