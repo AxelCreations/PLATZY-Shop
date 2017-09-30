@@ -94,6 +94,104 @@
     </div>
     <!-- /Menu -->
 
+    <!-- BreadCrumbs -->
+
+    <section id="breadcrumbs-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs">
+            <nav class="breadcrumb">
+              <a href="catalogo.html" class="breadcrumb-item">Catálogo</a>
+              <span class="breadcrumb-item active">Todos los Productos</span>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /BreadCrumbs -->
+
+    <!-- Productos -->
+
+    <section id="productos-container">
+      <div class="container">
+        <div class="row">
+          
+          <!-- Filtros -->
+           <div class="col-xs-12 col-md-3">
+            
+            <div class="list-group filtros-toggle">
+              <a href="#" id="filtrosToggle" class="list-group-item list-group-item-action navbar-toggler hidden-sm-up" data-target="collapse">
+                <h5 class="list-group-item-heading">Filtros</h5>
+              </a>
+            </div>
+             <div id="filtros-container" class="collapse navbar-toggleable-xs">
+               <div class="list-group">
+                 <a href="#" class="list-group-item list-group-item-action active">
+                   <h5 class="list-group-item-heading">Categoría</h5>
+                   <a href="#" class="list-group-item list-group-item-action">
+                     Ropa <span class="tag tag-pill tag-default pull-xs-right">174</span>
+                   </a>
+                   <a href="#" class="list-group-item list-group-item-action">
+                     Tecnología <span class="tag tag-pill tag-default pull-xs-right">143</span>
+                   </a>
+                   <a href="#" class="list-group-item list-group-item-action">
+                     Accesorios <span class="tag tag-pill tag-default pull-xs-right">130</span>
+                   </a>
+                 </a>
+               </div>
+               <div class="list-group">
+                 <a href="#" class="list-group-item list-group-item-action active">
+                   <h5 class="list-group-item-heading">Color</h5>
+                   <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+                     Verde
+                   </a>
+                   <a href="#" class="list-group-item list-group-item-action list-group-item-danger">
+                     Rojo
+                   </a>
+                   <a href="#" class="list-group-item list-group-item-action list-group-item-warning">
+                     Amarillo
+                   </a>
+                   <a href="#" class="list-group-item list-group-item-action list-group-item-info">
+                     Azul
+                   </a>
+                 </a>
+               </div>
+               <div class="list-group">
+                 <a href="#" class="list-group-item list-group-item-action active">
+                   <h5 class="list-group-item-heading">Sexo</h5>
+                   <a href="#" class="list-group-item list-group-item-action list-group-item-success">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input type="checkbox" value="m" class="form-check-input">
+                        Masculino
+                      </label>
+                    </div>
+                     <div class="form-check">
+                       <label class="form-check-label">
+                         <input type="checkbox" value="m" class="form-check-input">
+                         Femenino
+                       </label>
+                     </div>
+                   </a>
+                 </a>
+               </div>
+             </div>
+           </div>
+          <!-- /Filtros -->
+
+          <!-- Productos -->
+           <div class="col-xs-12 col-md-9">
+             Productos
+           </div>
+          <!-- /Productos -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- /Productos -->
+
     <!-- Footer -->
 
     <footer id="footer-container">
@@ -140,19 +238,25 @@
 
     <!-- Modal -->
 
-    <a href="#" onclick="mostrarModal()">Modal</a>
-
-    <div class="modal" id="modalOferta">
+    <div class="modal fade in" id="modalOferta">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Modal Title</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
+              &times;
             </button>
+            <h4 class="modal-title">Oferta Exclusiva</h4>
           </div>
           <div class="modal-body">
-            <p>Mundito</p>
+            Regístrate hoy y Recibe $15 de Descuento!
+            <form action="#" class="form">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="tu@correo.com">
+                <small class="form-text text-muted">No compartiremos tu Información con Nadie Más</small>
+              </div>
+              <button type="submit" class="btn btn-platzi form-text">Regístrame</button>
+              <button id="btnNoRegistrar" class="btn btn-warning form-text" data-dismiss="modal">No, No quiero el Descuento</button>
+            </form>
           </div>
         </div>
       </div>

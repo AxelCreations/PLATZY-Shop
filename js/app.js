@@ -27,6 +27,13 @@ $('#btnMenuCollapse').click(function(ev){
 });
 
 function mostrarModal(){
-	$('#modalOferta').modal();
+	const noMostrarModal = JSON.parse(localStorage.noMostrarModal);
+	if (!noMostrarModal){
+		$('#modalOferta').modal();
+	}
+
+	$('#btnNoRegistrar').click(function (ev) {
+		localStorage.noMostrarModal = true;
+	});
 }
 

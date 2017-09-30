@@ -61,8 +61,39 @@ input.form-control:focus {
 	color: white;
 }
 
+.modal.fade {
+	opacity: 1;
+	background-color: rgba(0,0,0, 0.7);
+}
+
 @media (max-width: 768px) {
 	#footer-container [class*="col-"] {
 		margin-bottom: 
 	}
+}
+
+#breadcrumbs-container .breadcrumb {
+	background-color: white;
+	padding-left: 0;
+}
+
+#breadcrumbs-container .breadcrumb .breadcrumb-item {
+	color: #1C3643;
+}
+
+#breadcrumbs-container .breadcrumb .breadcrumb-item.active {
+	color: #95A5A6;
+}
+
+#breadcrumbs-container .breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+	content: ">";
+}
+
+#filtros-container .list-group-item-action.active {
+	background-color: #99C84A;
+	border-color: #99C84A;
+}
+
+#filtros-container .list-group {
+	margin-bottom: 1em;
 }
